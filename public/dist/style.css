@@ -2,13 +2,11 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #054a29;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 .container {
   margin: 0 auto;
-  width: 90%;
-}
+  width: 90%; }
 
 /* Css till indexsidan- första diven och första textboxen */
 .del-1 {
@@ -16,8 +14,7 @@ body {
   min-height: 40%;
   background: #137547;
   background-size: cover;
-  background-position: bottom;
-}
+  background-position: bottom; }
 
 #textbox1 {
   min-height: 90%;
@@ -28,25 +25,21 @@ body {
   top: 20%;
   left: 20%;
   opacity: 0.75;
-  overflow-wrap: break-word;
-}
+  overflow-wrap: break-word; }
 
 #textbox1box {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 4px;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #textbox1box:link {
   text-decoration: none;
-  color: black;
-}
+  color: black; }
 
 #textbox1box:visited {
   text-decoration: none;
-  color: black;
-}
+  color: black; }
 
 .textbox2 {
   height: auto;
@@ -57,20 +50,23 @@ body {
   font-family: "Calibri", cursive;
   font-size: 23px;
   letter-spacing: 4px;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 /* Css till textboxar 3 och 4 */
 .textbox3 {
   border: 1rem solid #3fa34d;
   background-color: #137547;
   padding: 2rem;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
   height: auto;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
+
 .textbox3 #textbox3box1 {
   width: 15rem;
   background-color: #2a9134;
@@ -78,9 +74,8 @@ body {
   opacity: 0.9;
   height: auto;
   border: 0.3rem solid #3fa34d;
+  overflow: none; }
 
-  overflow: none;
-}
 .textbox3 #textbox3box2 {
   height: auto;
   width: 15rem;
@@ -88,15 +83,13 @@ body {
   padding: 1rem;
   opacity: 0.9;
   border: 0.3rem solid #3fa34d;
-
-  overflow: none;
-}
+  overflow: none; }
 
 /* Css till navbar */
 .navbar {
   border: 1rem solid #3fa34d;
-  background: #137547;
-}
+  background: #137547; }
+
 .navbar ul {
   background: #137547;
   list-style-type: none;
@@ -104,73 +97,65 @@ body {
   border: 1 rem solid #3fa34d;
   overflow: hidden;
   padding-right: 38px;
-  display: flex;
-}
+  display: -webkit-box;
+  display: flex; }
+
 .navbar li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
   color: black;
   opacity: 1;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 .navbar li a:hover {
   color: #c3bef7;
-  opacity: 1;
-}
+  opacity: 1; }
 
 /* Css till footer */
 .footer {
   background: #137547;
+  display: -webkit-box;
   display: flex;
   justify-content: space-around;
   border: 1rem solid #3fa34d;
   height: 12rem;
-  line-height: 24px;
-}
+  line-height: 24px; }
+
 .footer .copy {
   font-size: 12px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+
 .footer a:link {
   text-decoration: none;
-  color: black;
-}
+  color: black; }
+
 .footer a:visited {
   text-decoration: none;
-  color: black;
-}
+  color: black; }
 
 @media screen and (max-width: 768px) {
   .footer {
     font-size: 11px;
-    height: 10rem;
-  }
+    height: 10rem; }
   .copy {
     font-size: 7px;
     font-weight: bold;
-    text-transform: uppercase;
-  }
+    text-transform: uppercase; }
   .logga {
     border: 1rem solid #3fa34d;
     width: 100px;
-    height: 50px;
-  }
-}
+    height: 50px; } }
 
 @media only screen and (max-width: 600px) {
   .footer {
     display: grid;
-    height: 25rem;
-  }
+    height: 25rem; }
   #adress {
     grid-row-start: 1;
-    grid-column-start: 1;
-  }
-
+    grid-column-start: 1; }
   #foljoss {
     grid-row-start: 2;
-    grid-column-start: 1;
-  }
-}
+    grid-column-start: 1; } }
