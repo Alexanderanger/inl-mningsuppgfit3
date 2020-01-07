@@ -1,13 +1,16 @@
 @charset "UTF-8";
-$innergreen: #2a9134;
-$outergreen: #137547 ;
-$brightestgreen: #3fa34d;
-$maingreen: #054a29 ;
+$innergreen: #C08497;
+$salmonpink: #F7E3AF ;
+$maybeorange: #F7AF9D;
+$lemonmeringue: #F3EEC3 ;
+$pastelblue: #b0d0d3;
+$border:  0.3rem solid $maybeorange;
+
 
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: $maingreen;
+  background-color: $salmonpink;
   font-size: 18px;
 }
 
@@ -18,23 +21,22 @@ body {
 
 /* Css till indexsidan- första diven och första textboxen */
 .del-1 {
-  border: 1rem solid $brightestgreen;
-  min-height: 40%;
-  background: $outergreen;
+  border: $border;
+  background: $salmonpink;
   background-size: cover;
   background-position: bottom;
+  display:flex;
+  align-content:center;
+  align-items: center;
 }
 
 #textbox1 {
-  min-height: 90%;
-  width: 40%;
-  background-color: $innergreen;
+  background-color: $salmonpink;
   padding: 1rem;
-  position: relative;
-  top: 20%;
-  left: 20%;
   opacity: 0.75;
   overflow-wrap: break-word;
+  margin:auto;
+  text-align: center;
 }
 
 #textbox1box {
@@ -56,9 +58,9 @@ body {
 
 .textbox2 {
   height: auto;
-  padding: rem;
-  border: 1rem solid $brightestgreen;
-  background: $innergreen;
+  padding: 1rem;
+  border: $border;
+  background: $pastelblue;
   text-transform: uppercase;
   font-family: "Calibri", cursive;
   font-size: 23px;
@@ -69,8 +71,8 @@ body {
 
 /* Css till textboxar 3 och 4 */
 .textbox3 {
-  border: 1rem solid $brightestgreen;
-  background-color: $outergreen;
+  border:$border;
+  background-color: $salmonpink;
   padding: 2rem;
   display: flex;
   flex-direction: row;
@@ -79,35 +81,45 @@ body {
 }
 .textbox3 #textbox3box1 {
   width: 15rem;
-  background-color: $innergreen;
+  background-color: $salmonpink;
   padding: 1rem;
   opacity: 0.9;
   height: auto;
-  border: 0.3rem solid $brightestgreen;
+  border: $border;
 
   overflow: none;
 }
 .textbox3 #textbox3box2 {
   height: auto;
   width: 15rem;
-  background: #2a9134;
+  background: $salmonpink;
   padding: 1rem;
   opacity: 0.9;
-  border: 0.3rem solid $brightestgreen;
+  border: $border;
 
   overflow: none;
 }
 
+//header css
+/* .header {
+
+}
+.header img {
+//border: $border;
+  width: 200px;
+  height: 150px;
+} */
+
 /* Css till navbar */
 .navbar {
-  border: 1rem solid $brightestgreen;
-  background: $outergreen;
+  //border: $border;
+  background: $salmonpink;
 }
 .navbar ul {
-  background: $outergreen;
+  background: $salmonpink;
   list-style-type: none;
   justify-content: space-around;
-  border: 1 rem solid $brightestgreen;
+  border: $border;
   overflow: hidden;
   padding-right: 38px;
   display: flex;
@@ -128,10 +140,10 @@ body {
 
 /* Css till footer */
 .footer {
-  background: $outergreen;
+  background: $salmonpink;
   display: flex;
   justify-content: space-around;
-  border: 1rem solid $brightestgreen;
+  border: $border;
   height: 12rem;
   line-height: 24px;
 }
@@ -148,6 +160,12 @@ body {
   color: black;
 }
 
+.logga {
+ /* border: $border; */
+  width: 200px;
+  height: 150px;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     font-size: 11px;
@@ -159,17 +177,16 @@ body {
     text-transform: uppercase;
   }
   .logga {
-    border: 1rem solid $brightestgreen;
-    width: 100px;
-    height: 50px;
+  /*     border: $border; */
+  width: 100px;
+  height: 100px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .footer {
     display: grid;
-    height: 25rem;
-  }
+   }
   #adress {
     grid-row-start: 1;
     grid-column-start: 1;
@@ -178,5 +195,59 @@ body {
   #foljoss {
     grid-row-start: 2;
     grid-column-start: 1;
-  }
+  } 
+}
+
+
+
+
+//kontaktformulär css
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid $maybeorange; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: $pastelblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+//personboxar css
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }

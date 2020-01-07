@@ -32,51 +32,59 @@
 
       <div class="navbar">
         <ul>
-          <li><a class="active">Hem</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.html">Hem</a></li>
+          <li><a class="active">Kontakt</a></li>
         </ul>
       </div>
       <!-- </div> -->
 
       <!-- Textruta med möjlighet för bildbakgrund även länk i texten  -->
-
+      
       <div class="del-1">
-        <div id="textbox1">
-          <h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, eos.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro odio
-            illo voluptas, at cum libero distinctio alias esse vero sit!
-          </p>
-          <a id="textbox1box" href="kontakt.html">LINK</a>
-        </div>
-      </div>
-
-      <!-- Div med två stycken text  -->
-
-      <div class="textbox2">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <form action="action_page.php">
+      
+          <label for="fnamn">Förnamn</label>
+          <input type="text" id="fnamn" name="fornamn" placeholder="Ditt Namn..">
+      
+          <label for="enamn">Efternamn</label>
+          <input type="text" id="enamn" name="efternamn" placeholder="Ditt efternamn..">
+      
+          <label for="problem">Problem</label>
+          <select id="problem" name="problem">
+            <option value="it">IT</option>
+            <option value="allt">Allt</option>
+            <option value="övrigt">Övrigt</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="skriv något.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
       </div>
 
       <!-- Två textrutor  -->
 
       <div class="textbox3">
-        <div id="textbox3box1">
-          <h3>Lorem, ipsum.</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          aliquid distinctio ex dolor possimus quibusdam velit repellendus a
-          inventore! Officiis.
-        </div>
+        <div class="card">
+            <img src="public/images/logo.png" alt="John" style="width:100%">
+            <h1>John Doe</h1>
+            <p class="title">Medarbetare1</p>
+            <p>Anger AB</p>
+            <p>Telefon:</p>
+            <p>Email:</p>
+          </div>
 
-        <div id="textbox3box2">
-          <h3>Lorem, ipsum.</h3>
-          <h3>Lorem</h3>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
-          placeat dolorum adipisci quidem suscipit fugiat nostrum quaerat minus
-          molestias optio?
-        </div>
+          <div class="card">
+            <img src="public/images/logo.png" alt="John" style="width:100%">
+            <h1>Jane Doe</h1>
+            <p class="title">Medarbetare2</p>
+            <p>Anger AB</p>
+
+            <p>Telefon:</p>
+            <p>Email:</p>
+          </div>
       </div>
 
       <!-- Footer innehållande sociala medier "kontakt" och möjlighet för logga  -->
@@ -106,11 +114,11 @@
         <div id="foljoss">
           <h4>Följ oss</h4>
           <i class="fab fa-instagram"></i
-          ><a id="länksex" href="#insta"> Instagram</a><br />
+          ><a id="länksex" href="insta"> Instagram</a><br />
           <i class="fab fa-facebook-f"></i>
-          <a id="länktvå" href="#fb"> Facebook</a><br />
+          <a id="länktvå" href="fb"> Facebook</a><br />
           <i class="fab fa-linkedin"></i
-          ><a id="länktre" href="#linkedin"> LinkedIn</a><br />
+          ><a id="länktre" href="linkedin"> LinkedIn</a><br />
         </div>
       </footer>
     </div>
