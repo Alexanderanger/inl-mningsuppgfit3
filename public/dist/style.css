@@ -112,15 +112,15 @@ body {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  color: black;
   opacity: 1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   text-decoration: none; }
 
 .navbar li a:hover {
-  color: #c3bef7;
-  opacity: 1; }
+  color: #C08497;
+  opacity: 1;
+  background: #b0d0d3; }
 
 /* Css till footer */
 .footer {
@@ -146,13 +146,12 @@ body {
 
 .logga {
   /* border: $border; */
-  width: 200px;
-  height: 150px; }
+  width: 100px;
+  height: 100px; }
 
 @media screen and (max-width: 768px) {
   .footer {
-    font-size: 11px;
-    height: 10rem; }
+    font-size: 11px; }
   .copy {
     font-size: 7px;
     font-weight: bold;
@@ -164,13 +163,17 @@ body {
 
 @media only screen and (max-width: 600px) {
   .footer {
-    display: grid; }
-  #adress {
+    display: -webkit-box;
+    display: flex; }
+  /*   #adress {
     grid-row-start: 1;
-    grid-column-start: 1; }
+    grid-column-start: 1;
+  }
+
   #foljoss {
     grid-row-start: 2;
-    grid-column-start: 1; } }
+    grid-column-start: 1;
+  }  */ }
 
 input[type=text], select, textarea {
   width: 100%;

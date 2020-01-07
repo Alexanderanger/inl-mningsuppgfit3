@@ -128,14 +128,14 @@ body {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  color: black;
   opacity: 1;
   transition: 0.2s;
   text-decoration: none;
 }
 .navbar li a:hover {
-  color: #c3bef7;
+  color: $innergreen;
   opacity: 1;
+  background: $pastelblue;
 }
 
 /* Css till footer */
@@ -162,14 +162,13 @@ body {
 
 .logga {
  /* border: $border; */
-  width: 200px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
   .footer {
     font-size: 11px;
-    height: 10rem;
   }
   .copy {
     font-size: 7px;
@@ -185,9 +184,9 @@ body {
 
 @media only screen and (max-width: 600px) {
   .footer {
-    display: grid;
+    display:flex;
    }
-  #adress {
+/*   #adress {
     grid-row-start: 1;
     grid-column-start: 1;
   }
@@ -195,7 +194,7 @@ body {
   #foljoss {
     grid-row-start: 2;
     grid-column-start: 1;
-  } 
+  }  */
 }
 
 
